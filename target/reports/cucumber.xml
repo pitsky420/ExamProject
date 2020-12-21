@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="22.841">
+    <testcase classname="Test banking system statements" name="test for checking after balance for a specific account" time="10.69">
+        <system-out><![CDATA[Given user goes to website "http://localhost:9999/statements"...............passed
+When user inputs paul on account id field...................................passed
+And user clicks search button...............................................passed
+Then correct balance after "20.00" should be displayed......................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Test banking system statements" name="test for checking after balance for a specific account 2" time="11.643">
+        <system-out><![CDATA[Given user goes to website "http://localhost:9999/statements"...............passed
+When user inputs jarett on account id field.................................passed
+And user clicks search button...............................................passed
+Then correct balance after "60.00" should be displayed......................passed
+]]></system-out>
+    </testcase>
+</testsuite>

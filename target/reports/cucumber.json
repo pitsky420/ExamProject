@@ -1,0 +1,221 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-21T13:51:19.811Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6755810500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinition.BrowserSteps.openBrowser()"
+            }
+          }
+        ],
+        "line": 87,
+        "name": "test for checking after balance for a specific account",
+        "description": "",
+        "id": "test-banking-system-statements;test-for-checking-after-balance-for-a-specific-account;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 823975200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinition.BrowserSteps.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2252176500,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "user goes to website \"http://localhost:9999/statements\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:9999/statements\"",
+                  "offset": 21
+                }
+              ],
+              "location": "StepDefinition.BrowserSteps.user_goes_to_website(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 195993400,
+              "status": "passed"
+            },
+            "line": 81,
+            "name": "user inputs paul on account id field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "paul",
+                  "offset": 12
+                }
+              ],
+              "location": "StepDefinition.StatementSteps.user_inputs_account_id_on_account_id_field(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 503002600,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "user clicks search button",
+            "match": {
+              "location": "StepDefinition.StatementSteps.user_clicks_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 23992100,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "correct balance after \"20.00\" should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"20.00\"",
+                  "offset": 22
+                }
+              ],
+              "location": "StepDefinition.StatementSteps.correct_balance_after_should_be_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@new"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-21T13:51:30.546Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5678044800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinition.BrowserSteps.openBrowser()"
+            }
+          }
+        ],
+        "line": 88,
+        "name": "test for checking after balance for a specific account",
+        "description": "",
+        "id": "test-banking-system-statements;test-for-checking-after-balance-for-a-specific-account;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 813697900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinition.BrowserSteps.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4412056400,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "user goes to website \"http://localhost:9999/statements\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:9999/statements\"",
+                  "offset": 21
+                }
+              ],
+              "location": "StepDefinition.BrowserSteps.user_goes_to_website(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 171988600,
+              "status": "passed"
+            },
+            "line": 81,
+            "name": "user inputs jarett on account id field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "jarett",
+                  "offset": 12
+                }
+              ],
+              "location": "StepDefinition.StatementSteps.user_inputs_account_id_on_account_id_field(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 536000000,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "user clicks search button",
+            "match": {
+              "location": "StepDefinition.StatementSteps.user_clicks_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17982800,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "correct balance after \"60.00\" should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"60.00\"",
+                  "offset": 22
+                }
+              ],
+              "location": "StepDefinition.StatementSteps.correct_balance_after_should_be_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@new"
+          }
+        ]
+      }
+    ],
+    "name": "Test banking system statements",
+    "description": "",
+    "id": "test-banking-system-statements",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/statement.feature",
+    "tags": []
+  }
+]
