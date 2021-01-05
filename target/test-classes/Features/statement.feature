@@ -1,6 +1,6 @@
 Feature: Test banking system statements
 
-  @Smoke
+  @new
   Scenario Outline: user search non existing account id
     Given user goes to website "http://localhost:9999/statements"
     When user inputs <account_id> on account id field
@@ -56,7 +56,7 @@ Feature: Test banking system statements
   @Smoke
   Scenario: test for checking before balance all accounts
     Given user goes to website "http://localhost:9999/statements"
-    Then before balance should be "60.00"
+    Then before balance should be "60.00 EUR"
 
   @Smoke
   Scenario Outline: test for checking before balance for a specific account
@@ -67,13 +67,13 @@ Feature: Test banking system statements
 
     Examples: 
       | account_id | before_balance |
-      | paul       |          20.00 |
-      | jarett     |          30.00 |
+      | paul       | 20.00 EUR      |
+      | jarett     | 30.00 EUR      |
 
   @Smoke
   Scenario: test for checking balance after for all accounts
     Given user goes to website "http://localhost:9999/statements"
-    Then balance after should be "70.00"
+    Then balance after should be "70.00 EUR"
 
   @Smoke
   Scenario Outline: test for checking after balance for a specific account
@@ -84,5 +84,5 @@ Feature: Test banking system statements
 
     Examples: 
       | account_id | after_balance |
-      | paul       |         30.00 |
-      | jarett     |         40.00 |
+      | paul       | 30.00 EUR     |
+      | jarett     | 40.00 EUR     |
