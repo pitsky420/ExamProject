@@ -3,6 +3,10 @@ package StepDefinition;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
@@ -20,16 +24,15 @@ import io.cucumber.java.en.Given;
 public class BrowserSteps {
 
 	public WebDriver driver;
-	
-	
+
+
 	@Before
 	public WebDriver openBrowser() {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\paul_\\eclipse-workspace\\ExamProject\\src\\test\\resources\\drivers\\chromedriver.exe");
 		if(driver==null)
-		driver = new ChromeDriver();
+			driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		return driver;
-
 	}
 
 	@After
@@ -43,6 +46,5 @@ public class BrowserSteps {
 	public void user_goes_to_website(String url) {
 		driver.get(url);
 	}
-	
 
 }

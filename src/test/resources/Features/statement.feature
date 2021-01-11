@@ -1,6 +1,19 @@
 Feature: Test banking system statements
 
-  @new
+  @Smoke
+  Scenario: user created data for testing
+    Given statements has been created
+      | account_id | amount | currency | date       |
+      | paul       |     10 | EUR      | 1608512461 |
+      | paul       |    -10 | EUR      | 1608512461 |
+      | paul       |     20 | EUR      | 1608336000 |
+      | paul       |     10 | EUR      | 1608681600 |
+      | jarett     |     10 | EUR      | 1608512461 |
+      | jarett     |     10 | EUR      | 1608512461 |
+      | jarett     |     10 | EUR      | 1608336000 |
+      | jarett     |     10 | EUR      | 1608681600 |
+
+  @Smoke
   Scenario Outline: user search non existing account id
     Given user goes to website "http://localhost:9999/statements"
     When user inputs <account_id> on account id field

@@ -19,7 +19,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.*;
 
-
 public class StatementSteps {
 
 	public WebDriver driver;
